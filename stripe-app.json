@@ -1,0 +1,25 @@
+{
+    "id": "com.example.my-stripe-app",
+    "version": "0.0.1",
+    "name": "My Stripe App",
+    "icon": "",
+    "permissions": [],
+    "stripe_api_access_type": "platform",
+    "ui_extension": {
+        "views": [
+            {
+                "viewport": "stripe.dashboard.home.overview",
+                "component": "Home"
+            },
+            {
+                "viewport": "stripe.dashboard.invoice.detail",
+                "component": "Invoice"
+            }
+        ],
+        "content_security_policy": {
+            "connect-src": null,
+            "image-src": null,
+            "purpose": ""
+        }
+    }
+}

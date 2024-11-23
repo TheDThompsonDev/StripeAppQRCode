@@ -1,0 +1,39 @@
+{
+  "name": "com.example.my-stripe-app",
+  "version": "0.0.1",
+  "description": "Test",
+  "private": true,
+  "license": "~~proprietary~~",
+  "dependencies": {
+    "@stripe/stripe-js": "^5.2.0",
+    "@stripe/ui-extension-sdk": "^8.9.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "qrcode": "^1.5.4",
+    "stripe": "^13.11.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@stripe/ui-extension-tools/eslintrc.ui-extension.js"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint --ext ts,tsx src",
+    "build": "tsc",
+    "start": "node server.js"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@stripe/ui-extension-tools": "^0.0.1",
+    "@types/qrcode": "^1.5.5"
+  },
+  "main": "jest.config.js",
+  "keywords": [],
+  "author": ""
+}
